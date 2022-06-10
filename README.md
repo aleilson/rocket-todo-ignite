@@ -10,7 +10,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="Rocket todo" src=".github/code-hero.png" />
+    <img alt="Rocket todo" src=".github/rocket-todo.png" />
 </h1>
 
 <br>
