@@ -1,0 +1,107 @@
+
+.tasks {
+    width: 100%;
+    max-width: 736px;
+    margin: 0 auto;
+    margin-top: 4rem;
+ 
+}
+
+.tasksContent {
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
+}
+
+.headerTasks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+
+.headerTasks strong {
+    font-size: 14px;
+    line-height: 1rem;
+    color: var(--purple-100);
+}
+
+.headerTasks strong:first-child {
+    color: var(--blue-200);
+}
+
+.headerTasks strong span {
+    color: var(--gray-100);
+    background: var(--gray-400);
+    border-radius: 1rem;
+    padding: 0.2rem 0.6rem;
+    margin-left: 0.5rem;
+}
+
+.task {
+    display: grid;
+    grid-template-columns: 30px 632px 30px;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px;
+    background: var(--gray-500);
+    border-radius: 0.5rem;
+    border: 1px solid var(--gray-400);
+    margin-bottom: 1rem;
+}
+
+.task input[type="checkbox"] {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--blue-200);
+    margin: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.task input[type="checkbox"]:checked::before {
+    position: absolute;
+    content: '\2713';
+    width: 1rem;
+    height: 1rem;
+    background: var(--purple-100);
+    border: 1px solid var(--purple-100);
+    border-radius: 50%;
+    left: -2px;
+    top: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task span {
+    font-size: 14px;
+    line-height: 1.2rem;
+}
+
+.finished {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.task button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: color 0.2s;
+    padding: 5px;
+}
+
+.task button:hover {
+    color: var(--red-500);
+    background: var(--gray-400);
+}

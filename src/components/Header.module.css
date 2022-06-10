@@ -1,0 +1,35 @@
+.header {
+    background: var(--gray-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.25rem 0;
+    position: relative;
+}
+
+.header img {
+    height: 2rem;
+}
+
+.header span {
+    display: flex;
+    align-items: center;
+    padding-left: 0.75rem;
+    font-weight: 900;
+    font-size: 2.1rem;
+    color: var(--blue-200);
+    line-height: 2.5rem;
+}
+
+.header span p {
+    color: var(--purple-300);
+}
+
+.header .addTask {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -22px;
+
+}
